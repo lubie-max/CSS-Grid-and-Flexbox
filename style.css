@@ -1,0 +1,148 @@
+body{
+    background: rgb(21, 243, 128);
+}
+
+h1,h2 ,h3{
+    font-family: fantasy;
+    letter-spacing: 2px;
+    padding: auto 2px;
+}
+
+/* --------------Main Container-------------- */
+.container{
+    width: 50%;
+    background: #000;
+    border: 2px solid gold;
+    border-radius: 10px;
+    height: auto;
+    color: rgb(73, 156, 113);
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    /* flex-flow: row-reverse;   */ 
+    flex-wrap: wrap;
+    /* padding: 0 auto; */
+    margin: 110px auto;
+
+
+
+}
+
+/* ----------------Sub Container(classes) of Main Container--------------- */
+.list ,.para , .points{
+
+    border: 2px solid green;
+    background: beige ;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.para{
+    border: 2px solid green;
+    margin: 10px;
+    padding: 10px;
+}
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(3);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  border: 2px solid rgb(184, 27, 27);
+
+}
+
+
+
+
+/* -------------------------- Sub Container of 'list'  container */
+
+/* --------------------------Grid Layout----------------------- */
+.item1{
+    border: 2px solid green;
+
+    grid-row: 1;
+    grid-column: 1/4;
+}
+.item2{
+    border: 2px solid red;
+
+    grid-row: 2;
+    grid-column: 2;
+}
+.item3{
+    border: 2px solid rgb(37, 224, 211);
+
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.item4{
+    border: 2px solid rgb(70, 194, 13);
+
+    grid-row: 2;
+    grid-column: 1;
+}
+.item5{
+    border: 2px solid rgb(211, 224, 37);
+
+    grid-row: 3;
+    grid-column: 1/4;
+}
+.item6{
+    border: 2px solid rgb(59, 37, 224);
+
+    grid-row: 4;
+    grid-column: 2/3;
+}
+
+
+
+/* ------------------**********--------------------- */
+.points{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /* justify-content: flex-end; */
+
+
+}
+
+ol{
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    order: 1;
+    /* flex-shrink: 3; */
+    align-self: baseline;
+
+
+}
+
+ul{
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    order: 2;
+    /* flex: grow 1; */
+    align-self: flex-end;
+
+}
+
+.p1{
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    order: 1;
+    /* flex: grow 1; */
+    align-self: flex-start;
+}
+
+
+
+
